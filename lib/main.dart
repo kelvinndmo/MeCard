@@ -17,34 +17,41 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Row(
 //            mainAxisSize: MainAxisSize.min,
-//            verticalDirection: VerticalDirection.down,
-//            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+//            verticalDirection: VerticalDirection.up,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                height: 100,
-                margin: EdgeInsets.fromLTRB(20, 30, 30, 20),
-                padding: EdgeInsets.all(20),
+                width: 100.0,
+                height: double.infinity,
                 color: Colors.white,
-                child: Text("Container 1"),
+                child: Text('Container 1'),
               ),
-              //space bettween chilren
-              SizedBox(width: 20),
-              Container(
-//                width: double.infinity,
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-                child: Text("Container 2"),
-              ),
-              Container(
-                width: 30,
-                height: 100,
-                color: Colors.yellow,
-                child: Text("Container 2"),
-              ),
-              Container(
+              SizedBox(
                 width: 20,
+              ),
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.orange,
+                    ),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.blue,
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: double.infinity,
+                width: 100,
+                color: Colors.red,
+                child: Text("Container 2"),
               )
             ],
           ),
