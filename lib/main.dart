@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           CircleAvatar(
-              radius: 50, backgroundImage: AssetImage('images/lec.jpg')),
+              radius: 50, backgroundImage: AssetImage('images/novak.jpg')),
           Text(
             "Kelvin Onkundi",
             style: TextStyle(
@@ -33,6 +33,13 @@ class MyApp extends StatelessWidget {
                 color: Colors.teal.shade100,
                 letterSpacing: 2.5,
                 fontWeight: FontWeight.bold),
+          ),
+          SizedBox(
+            height: 20.0,
+            width: 150.0,
+            child: Divider(
+              color: Colors.teal.shade100,
+            ),
           ),
           Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
