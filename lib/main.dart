@@ -35,45 +35,40 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold),
           ),
           Card(
-            color: Colors.white,
-            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-            child: Row(
-              children: <Widget>[
-                Icon(
-                  Icons.phone,
-                  color: Colors.teal,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Padding(
+                padding: EdgeInsets.all(0),
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.teal),
+                  title: Text(
+                    "+254799935239",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: 'SourceSansPro',
+                        color: Colors.teal),
+                  ),
+                  trailing: Icon(Icons.more_vert),
                 ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  "+254 799 935 239",
-                  style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontSize: 20,
-                      fontFamily: "SourceSansPro"),
-                )
-              ],
-            ),
-          ),
+              )),
           Card(
             color: Colors.white,
             margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
             child: Padding(
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: <Widget>[
-                  Icon(
+                padding: EdgeInsets.all(0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 10,
+                  title: Text(
+                    "ndemokelvin@gmail.com",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.teal,
+                        fontFamily: 'SourceSansPro'),
                   ),
-                  Text("ndemokelvinonkundi@gmail.com")
-                ],
-              ),
-            ),
+                  trailing: Icon(Icons.more_vert),
+                )),
           )
         ],
       )),
